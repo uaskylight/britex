@@ -1,0 +1,304 @@
+/* veriables */
+
+:root {
+  --color-body: #e5e5e5;
+  --color-nav: #263238;
+  --color-title: #000000;
+  --color-title: #263238;
+  --color-logo-first: #000000;
+  --color-logo-second: #939393;
+  --color-text: #8f95a5;
+  --color-btm: #263238;
+  --color-span: #2a3246;
+  --color-price: #263238;
+  --color-price-two: #546269;
+
+  --font-weight600: 600;
+  --font-weight400: 400;
+  --font-weight500: 500;
+}
+
+@font-face {
+  font-family: Popins400;
+  src: url(/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--color-logo-second);
+}
+
+/* buttom */
+
+.btm {
+  border: 1px solid var(--color-btm);
+  cursor: pointer;
+  border-radius: 10px;
+}
+.header-btm {
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+
+  background-color: inherit;
+  color: var(--color-title);
+}
+.header-btm:hover,
+.header-btm:focus {
+  color: #ffffff;
+  background-color: var(--color-btm);
+}
+.hero-btm,
+.skills-btm {
+  font-size: 36px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+  background: var(--color-btm);
+}
+
+.hero-btm:hover,
+.hero-btm:focus,
+.skills-btm:hover,
+.skills-btm:focus {
+  color: var(--color-btm);
+  background-color: #ffffff;
+}
+.skills-btm {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* body */
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-family: Popins400;
+
+  /* background-color:  #E5E5E5; */
+}
+
+/* header */
+
+.header {
+}
+.header-logo {
+  font-size: 36px;
+  line-height: 1.5;
+
+  color: #000000;
+}
+.header-logo span {
+  color: var(--color-logo-second);
+}
+.nav {
+}
+.header-list {
+}
+.header-item {
+}
+.header-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+
+  color: var(--color-nav);
+}
+
+/* hero */
+
+.hero {
+}
+.hero-title {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1.25;
+
+  color: var(--color-title);
+}
+.hero-text {
+  font-size: 24px;
+  line-height: 1.5;
+
+  color: var(--color-text);
+}
+
+/* skills */
+
+.skills {
+}
+.skills-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.5;
+
+  color: var(--color-title);
+}
+.skills-list {
+}
+.skills-item {
+  background-color: #f5f5f5;
+}
+.skills-title-two {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+
+  color: var(--color-price);
+}
+.skills-text {
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: var(--color-text);
+}
+
+/* about */
+
+.about {
+}
+.about-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.5;
+
+  color: var(--color-title);
+}
+.about-text {
+  font-size: 20px;
+  line-height: 1.8;
+
+  color: var(--color-text);
+}
+.about-list {
+}
+.about-item {
+}
+.about-item span {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.5;
+
+  color: var(--color-span);
+}
+.about-item p {
+  font-size: 20px;
+  line-height: 1.5;
+
+  color: var(--color-text);
+}
+
+/* pricing */
+
+.pricing {
+}
+.pricing-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.5;
+
+  color: var(--color-title);
+}
+.pricing-list {
+}
+.pricing-item {
+}
+.pricing-title-select {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 48px;
+
+  color: var(--color-nav);
+}
+.pricing-text {
+  font-size: 20px;
+  line-height: 1.5;
+
+  color: var(--color-text);
+}
+.pricing-text-two {
+  font-size: 18px;
+  border-radius: 5px;
+
+  background-color: #eeeeee;
+  color: var(--color-price-two);
+}
+.pricing-text-two span {
+  font-size: 24px;
+  line-height: 1.5;
+
+  color: var(--color-price);
+}
+
+/* contacts */
+
+.contacts {
+}
+.contacts-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.5;
+
+  color: var(--color-logo-first);
+}
+.contacts-text {
+  font-size: 20px;
+  line-height: 1.5;
+
+  color: var(--color-text);
+}
+.contacts-form {
+}
+.contacts-label {
+}
+.contact-btm {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  border-radius: 10px;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+  background: #263238;
+}
+.contact-btm:hover {
+  background-color: #ffffff;
+  color: #263238;
+}
+
+/* footer */
+
+.footer-logo {
+  font-size: 36px;
+  line-height: 1.5;
+
+  color: var(--color-logo-first);
+}
+.footer-logo span {
+  color: var(--color-logo-second);
+}
+.footer-list {
+}
+.footer-item {
+}
+.footer-link {
+font-size: 24px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+
+color: var(--color-text);
+}
+.footer-link:hover,
+.footer-link:focus{
+    color: var(--color-nav);
+}
