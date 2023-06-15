@@ -1,3 +1,21 @@
+/* body */
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-family: Popins400;
+
+  background-color: #ffffff;
+}
+
+.container {
+  width: 1368px;
+  padding: 0 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  outline: 2px solid red;
+}
+
 /* veriables */
 
 :root {
@@ -18,6 +36,37 @@
   --font-weight500: 500;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+button {
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+img {
+}
+button {
+  margin: 0;
+  padding: 0;
+}
 @font-face {
   font-family: Popins400;
   src: url(/fonts/Poppins/Poppins-Regular.ttf);
@@ -41,9 +90,10 @@ li {
 .btm {
   border: 1px solid var(--color-btm);
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .header-btm {
+  min-width: 312px;
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: 0.03em;
@@ -58,13 +108,19 @@ li {
 }
 .hero-btm,
 .skills-btm {
+  min-width: 230px;
   font-size: 36px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
+  padding: 17px 0;
 
   color: #ffffff;
   background: var(--color-btm);
+}
+.hero-btm {
+  min-width: 426px;
+  padding: 24px 4px;
 }
 
 .hero-btm:hover,
@@ -79,18 +135,13 @@ li {
   font-size: 18px;
 }
 
-/* body */
-
-body {
-  font-family: "Poppins", sans-serif;
-  font-family: Popins400;
-
-  /* background-color:  #E5E5E5; */
-}
-
 /* header */
 
 .header {
+  padding: 55px 15px;
+}
+.header-container {
+  display: flex;
 }
 .header-logo {
   font-size: 36px;
@@ -102,8 +153,14 @@ body {
   color: var(--color-logo-second);
 }
 .nav {
+  display: flex;
+  margin-left: auto;
 }
 .header-list {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  margin-right: 121px;
 }
 .header-item {
 }
@@ -111,54 +168,125 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.5;
+  padding: 8px;
 
   color: var(--color-nav);
+}
+.contact-btm {
+  padding: 20px 56px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-left: 30px;
+
+  color: #ffffff;
 }
 
 /* hero */
 
 .hero {
 }
+/* .container > div{
+
+  max-width: 540px;
+  margin-right: 144px;
+
+  outline: 2px solid green;
+} */
+.hero-container {
+  display: flex;
+}
 .hero-title {
   font-weight: 600;
   font-size: 64px;
   line-height: 1.25;
+  margin-bottom: 40px;
 
   color: var(--color-title);
 }
 .hero-text {
   font-size: 24px;
   line-height: 1.5;
+  margin-bottom: 60px;
 
   color: var(--color-text);
+}
+.hero img {
+  flex-basis: 100%;
 }
 
 /* skills */
 
 .skills {
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+.skills-container {
 }
 .skills-title {
   font-weight: 600;
   font-size: 48px;
   line-height: 1.5;
+  text-align: center;
 
   color: var(--color-title);
 }
+
 .skills-list {
+  display: grid;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  margin-top: 60px;
 }
-.skills-item {
+
+.skills-item1 {
+  grid-area: 1 / 1 / 3 / 2;
+}
+.skills-item2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.skills-item3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.skills-item4 {
+  grid-area: 2 / 2 / 3 / 4;
+}
+
+.skills-item1,
+.skills-item2,
+.skills-item3,
+.skills-item4 {
   background-color: #f5f5f5;
+  border-radius: 4px;
+  padding: 0 18px;
+  flex-basis: content;
 }
+.skills-item1,
+.skills-item2,
+.skills-item3 {
+  padding-top: 32px;
+  padding-bottom: 30px;
+}
+.skills-item4 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .skills-title-two {
   font-weight: 600;
   font-size: 30px;
   line-height: 45px;
+  margin-top: 24px;
+  margin-bottom: 20px;
 
   color: var(--color-price);
 }
 .skills-text {
   font-size: 16px;
   line-height: 1.5;
+  margin-bottom: 30px;
 
   color: var(--color-text);
 }
@@ -166,23 +294,40 @@ body {
 /* about */
 
 .about {
+  padding-bottom: 180px;
+}
+.about-container {
+  display: flex;
+  justify-content: space-between;
+}
+.about-container div {
+  max-width: 650px;
+}
+.about-container img {
+  flex-basis: content;
 }
 .about-title {
   font-weight: 600;
   font-size: 48px;
   line-height: 1.5;
+  margin-bottom: 30px;
 
   color: var(--color-title);
 }
 .about-text {
   font-size: 20px;
   line-height: 1.8;
+  margin-bottom: 60px;
 
   color: var(--color-text);
 }
 .about-list {
+  display: flex;
+  gap: 131px;
+  justify-content: center;
 }
 .about-item {
+  text-align: center;
 }
 .about-item span {
   font-weight: 600;
@@ -201,28 +346,50 @@ body {
 /* pricing */
 
 .pricing {
+  padding-bottom: 180px;
+}
+.pricing-container {
 }
 .pricing-title {
   font-weight: 600;
   font-size: 48px;
   line-height: 1.5;
+  text-align: center;
+  margin-bottom: 60px;
 
   color: var(--color-title);
 }
 .pricing-list {
+  display: flex;
+  align-items: baseline;
+
+  gap: 30px;
 }
 .pricing-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pricing-item img {
+}
+.pricing-item div {
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  margin-top: 32px;
 }
 .pricing-title-select {
   font-weight: 600;
   font-size: 30px;
   line-height: 48px;
+  margin-bottom: 20px;
 
   color: var(--color-nav);
 }
 .pricing-text {
   font-size: 20px;
   line-height: 1.5;
+  margin-bottom: 40px;
 
   color: var(--color-text);
 }
@@ -243,17 +410,31 @@ body {
 /* contacts */
 
 .contacts {
+  padding-bottom: 54px;
 }
+.contacts-container {
+  display: flex;
+}
+.contacts-block {
+  margin-left: auto;
+}
+.contacts-container img {
+  flex-basis: content;
+  margin-right: 145px;
+}
+
 .contacts-title {
   font-weight: 600;
   font-size: 48px;
   line-height: 1.5;
+  margin-bottom: 60px;
 
   color: var(--color-logo-first);
 }
 .contacts-text {
   font-size: 20px;
   line-height: 1.5;
+  margin-bottom: 30px;
 
   color: var(--color-text);
 }
@@ -277,7 +458,13 @@ body {
 }
 
 /* footer */
+footer {
+  padding-bottom: 86px;
+}
 
+.footer-container {
+  display: flex;
+}
 .footer-logo {
   font-size: 36px;
   line-height: 1.5;
@@ -288,19 +475,21 @@ body {
   color: var(--color-logo-second);
 }
 .footer-list {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  margin-left: auto;
 }
 .footer-item {
 }
 .footer-link {
-font-size: 24px;
-line-height: 1.5;
-letter-spacing: 0.02em;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 
-color: var(--color-text);
+  color: var(--color-text);
 }
 .footer-link:hover,
-.footer-link:focus{
-    color: var(--color-nav);
+.footer-link:focus {
+  color: var(--color-nav);
 }
-asasdasdadasda
-adasdas
