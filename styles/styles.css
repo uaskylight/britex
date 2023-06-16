@@ -361,16 +361,20 @@ li {
 }
 .pricing-list {
   display: flex;
-  align-items: baseline;
 
   gap: 30px;
 }
 .pricing-item {
- 
+  display: flex;
+  flex-direction: column;
 }
 .pricing-item img {
 }
 .pricing-item div {
+  display: flex;
+  flex-direction:column;
+  align-items: baseline;
+  flex-grow: 1;
   margin-top: 32px;
 }
 .pricing-title-select {
@@ -381,6 +385,7 @@ li {
 
   color: var(--color-nav);
 }
+
 .pricing-text {
   font-size: 20px;
   line-height: 1.5;
@@ -391,6 +396,8 @@ li {
 .pricing-text-two {
   font-size: 18px;
   border-radius: 5px;
+  margin-top: auto;
+  padding: 0 23px;
 
   background-color: #eeeeee;
   color: var(--color-price-two);
