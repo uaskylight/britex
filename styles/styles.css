@@ -474,6 +474,13 @@ footer {
   gap: 80px;
   margin-left: auto;
 }
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--color-nav);
+}
+
+
 .footer-item {
 }
 .footer-link {
@@ -482,8 +489,4 @@ footer {
   letter-spacing: 0.02em;
 
   color: var(--color-text);
-}
-.footer-link:hover,
-.footer-link:focus {
-  color: var(--color-nav);
 }
