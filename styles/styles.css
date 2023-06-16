@@ -188,13 +188,7 @@ li {
 
 .hero {
 }
-/* .container > div{
 
-  max-width: 540px;
-  margin-right: 144px;
-
-  outline: 2px solid green;
-} */
 .hero-container {
   display: flex;
 }
