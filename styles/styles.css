@@ -366,16 +366,11 @@ li {
   gap: 30px;
 }
 .pricing-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+ 
 }
 .pricing-item img {
 }
 .pricing-item div {
-  display: flex;
-  align-items: baseline;
-  flex-direction: column;
   margin-top: 32px;
 }
 .pricing-title-select {
