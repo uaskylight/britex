@@ -2,7 +2,6 @@
 :root {
   --primary-text-color: #8F95A5;
   --secondary-text-color: #000000;
-
   --primary-decor-color: #263238;
   --secondary-decor-color: #546269;
   --third-decor-color: #939393;
@@ -405,8 +404,6 @@ body {
   background-color: #FFFFFF;
   border: 2px solid var(--primary-decor-color);
 }
-
-.input-email {}
 
 /* Footer */
 .footer-wrapper {
